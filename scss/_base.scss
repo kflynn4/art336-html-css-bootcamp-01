@@ -34,6 +34,8 @@ h1 {
 
 h1 + p {
    @include fontSize(30px);
+    margin-top: 0;
+    margin-bottom: 30;
 }
 
 h2 {
@@ -45,28 +47,45 @@ h2 {
 
 h2 + p {
     margin-top: 0;
+    margin-bottom: 0;
+    color: lighten($color, 5%);    
 }
 
 h3 {
     @include fontSize(34px);
     margin-top: 0;
     margin-bottom: 0;
+    color: lighten($color, 5%);
 }
 
 h3 + p {
     margin-top: 0;
     margin-bottom: 40;
+    color: lighten($color, 5%);
 }
 
 h4 {
-    @include fontSize(20px);
-    margin-top: 0;
+    @include fontSize(30px);
+    margin-top: 10;
     margin-bottom: 0;
+    color: lighten($color, 5%);
 }
 
 h4 + p {
     margin-top: 0;
-    margin-bottom: 40;
+    margin-bottom: 20;
+}
+
+h5 {
+    @include fontSize (20px);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: lighten($color, 5%);
+}
+
+h5 + p {
+    margin-top: 0;
+    margin-bottom: 10;
 }
 
 dt {
@@ -94,7 +113,7 @@ a {
 
 a:hover {
     background-color: lighten($background-color, 5%);
-    color: lighten($color, 40%);
+    color: lighten($color, 100%);
     transition: background-color 300ms linear;
     transition: color 300ms linear;
 }
@@ -113,4 +132,13 @@ ul {
 
 p + ul {
     margin-top: -10px
+}
+
+body {
+    background-color: #f4deb6;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
