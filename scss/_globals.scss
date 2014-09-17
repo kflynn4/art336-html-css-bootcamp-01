@@ -17,58 +17,51 @@ Globals
 
 // Loading Google Fonts
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v13/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v13/d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v13/7m8l7TlFO-S3VkhHuR0at7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v13/t6Nd4cfPRhZP44Q5QAjcC7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Special Elite';
+  font-family: 'Permanent Marker';
   font-style: normal;
   font-weight: 400;
-  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35Jm4kaQb-UsZVONjobs91YQtw.woff) format('woff');
+  src: local('Permanent Marker'), local('PermanentMarker'), url(http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(http://fonts.gstatic.com/s/ubuntumono/v6/ViZhet7Ak-LRXZMXzuAfkbrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'), url(http://fonts.gstatic.com/s/ubuntumono/v6/ceqTZGKHipo8pJj4molythbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Mono Italic'), local('UbuntuMono-Italic'), url(http://fonts.gstatic.com/s/ubuntumono/v6/KAKuHXAHZOeECOWAHsRKA4o3ZslTYfJv0R05CazkwN8.woff) format('woff');
 }
 
 
 @mixin body-font-regular {
-    font-family: 'Roboto', helvetica, verdana, serif;
+    font-family: 'Ubuntu Mono', helvetica, verdana, serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @mixin body-font-italic {
-    font-family: 'Roboto', helvetica, verdana, serif;
+    font-family: 'Ubuntu Mono', helvetica, verdana, serif;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @mixin body-font-bold {
-    font-family: 'Roboto', helvetica, verdana, serif;
+    font-family: 'Ubuntu Mono', helvetica, verdana, serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @mixin headline-font {
-    font-family: 'Special Elite', helvetica, verdana, serif;
+    font-family: 'Permanent Marker', helvetica, verdana, serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -76,4 +69,3 @@ Globals
 // Site Variables
 $color: #242424;
 $background-color: #e56d2e;
-

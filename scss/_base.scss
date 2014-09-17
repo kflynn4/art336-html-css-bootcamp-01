@@ -88,6 +88,22 @@ h5 + p {
     margin-bottom: 10;
 }
 
+h4 + h5 {
+    margin-top: 10;
+    margin-bottom: 20
+}
+
+h6 {
+    @include fontSize(15px);
+    margin-top: 10;
+    margin-bottom: 0;
+}
+
+h6 + p {
+    margin-top: 0;
+    margin-bottom: 10;
+}
+
 dt {
     margin-top: 15px;
 }
@@ -134,11 +150,18 @@ p + ul {
     margin-top: -10px
 }
 
-body {
-    background-color: #f4deb6;
-}
+//body {
+//    background-color: #f4deb6;
+//}
 
 li {
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+body {
+    background: url(../img/timber4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
