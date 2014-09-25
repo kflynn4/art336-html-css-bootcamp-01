@@ -17,11 +17,13 @@ Globals
 
 // Loading Google Fonts
 @font-face {
-  font-family: 'Permanent Marker';
+  font-family: 'Bad Script';
   font-style: normal;
   font-weight: 400;
-  src: local('Permanent Marker'), local('PermanentMarker'), url(http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff) format('woff');
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(http://fonts.gstatic.com/s/badscript/v5/rL_b2ND61EQmMOJ8CRr1fgsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
 @font-face {
   font-family: 'Ubuntu Mono';
   font-style: normal;
@@ -61,11 +63,12 @@ Globals
 }
 
 @mixin headline-font {
-    font-family: 'Permanent Marker', helvetica, verdana, serif;
+    font-family: 'Bad Script', helvetica, verdana, serif;
     font-style: normal;
     font-weight: 400;
 }
 
+
 // Site Variables
-$color: #242424;
-$background-color: #4b66a5;
+$color: #fff8f8;
+$background-color: #5a5a5a;

@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     @include fontSize(60px);
     margin-bottom: 84px;
-    text-transform: capitalize;
 }
 
 //p:first-of-type {
@@ -35,14 +34,14 @@ h1 {
 h1 + p {
    @include fontSize(30px);
     margin-top: 0;
-    margin-bottom: 30;
+    margin-bottom: 10;
 }
 
 h2 {
     @include fontSize(44px);
     margin-top: 60px;
     margin-botton: 0;
-    text-transform: uppercase;
+    leading: 0;
 }
 
 h2 + p {
@@ -113,8 +112,8 @@ b, strong {
 }
 
 a {
-    background-color: $background-color;
-    border-radius: 4px;
+//    background-color: $background-color;
+//    border-radius: 4px;
     color: $color;
     @include body-font-italic;
     padding: 0 4px 2px 4px;
@@ -123,12 +122,12 @@ a {
     transition: color 300ms linear;
 }
 
-a:hover {
-    background-color: lighten($background-color, 5%);
-    color: lighten($color, 100%);
-    transition: background-color 300ms linear;
-    transition: color 300ms linear;
-}
+//a:hover {
+//    background-color: lighten($background-color, 5%);
+//    color: lighten($color, 100%);
+//    transition: background-color 300ms linear;
+//    transition: color 300ms linear;
+//}
 
 ul {
     margin: 0 0 0 22px;
@@ -156,8 +155,65 @@ li {
 }
 
 body {
-    background: url(../img/timber4.jpg);
+    background: url(../img/bwlake.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+
+ol li {
+    margin-bottom: 8px;
+}
+
+p + ul, p + ol {
+    margin-top: -18px;
+
+}
+
+dt {
+    @include body-font-bold; 
+}
+
+dd {
+    margin: 0 0 10px 0;
+}
+
+//nav {
+//    background-color: #fff;
+//    border: 1px solid gray;
+//    border-bottom-left-radius: 6px;
+//    border-bottom-right-radius: 6px;
+//    border-top: none;
+//    padding: 4px 5px 6px 5px;
+//    position: fixed;
+//}
+
+//nav ul {
+//    list-style-type: none;
+//    margin: 0;
+//    padding: 0;
+//}
+//
+//nav ul lu {
+//    display: inline-block;
+//    margin: 0 6px;
+//}
+
+blockquote:before {
+  color: $color;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+    blockquote cite {
+    display: block;
+    @include body-font-bold;
+    text-align: right;
 }
